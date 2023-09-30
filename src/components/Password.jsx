@@ -5,7 +5,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export const Password = () => {
-  const [password, setPassword] = useState(30);
+  const [password, setPassword] = useState(10);
   const [generatedPassword, setgeneratedPassword] = useState("");
 
   const generatePassword = () => {
@@ -47,6 +47,7 @@ export const Password = () => {
             type="range"
             max={30}
             min={5}
+            value={password}
           />
           <span>{password}</span>
         </div>
