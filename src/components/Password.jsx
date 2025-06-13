@@ -80,6 +80,7 @@ export const Password = () => {
         </div>
       </div>
       <ToastContainer />
+      <button onClick="generatePassword">Reload<button/>
     </div>
   );
 };
